@@ -5,10 +5,10 @@ var color = document.getElementById('color');
 
 
 function bgColorClock() {
-    var time = new Date();                          //getting current time
-    var h = (time.getHours() % 24).toString();      //getting current hour and convert its value to string
-    var m = time.getMinutes().toString();           //getting current minutes and convert the value to string
-    var s = time.getSeconds().toString();           //getting current seconds and convert the value to string
+    var time = new Date();                          //getting current date
+    var h = (time.getHours() % 24).toString();      //getting current hour from the date and convert its value to string
+    var m = time.getMinutes().toString();           //getting current minutes from the date and convert the value to string
+    var s = time.getSeconds().toString();           //getting current seconds from the date and convert the value to string
 
     if (h.length < 2) {                             //adding zero in front single numbers for convenient visualization    
         h = '0' + h;
